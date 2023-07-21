@@ -1,0 +1,82 @@
+{
+  "mode": "Indexed",
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "field": "tags.tagName1",
+          "exists": "false"
+        },
+        {
+          "field": "tags.tagName2",
+          "exists": "false"
+        },
+        {
+          "field": "tags.tagName3",
+          "exists": "false"
+        },
+        {
+          "field": "tags.tagName4",
+          "exists": "false"
+        },
+        {
+          "field": "tags.tagName5",
+          "exists": "false"
+        },
+        {
+          "field": "tags.tagName6",
+          "exists": "false"
+        },
+        {
+          "field": "tags.tagName7",
+          "exists": "false"
+        }
+      ]
+    },
+    "then": {
+      "effect": "modify",
+			"details": {
+        "roleDefinitionIds": [
+          "/providers/Microsoft.Authorization/roleDefinitions/00000000-0000-0000-0000-000000000000"
+        ],
+      "operations": [
+        {
+          "operation": "addOrReplace",
+					"field": "tags.tagName1",
+          "value": "tagValue1"
+        },
+        {
+          "operation": "addOrReplace",
+					"field": "tags.tagName2",
+          "value": "tagValue2"
+        },
+        {
+          "operation": "addOrReplace",
+					"field": "tags.tagName3",
+          "value": "tagValue3"
+        },
+        {
+          "operation": "addOrReplace",
+					"field": "tags.tagName4",
+          "value": "tagValue4"
+        },
+        {
+          "operation": "addOrReplace",
+					"field": "tags.tagName5",
+          "value": "tagValue5"
+        },
+        {
+          "operation": "addOrReplace",
+					"field": "tags.tagName6",
+          "value": "tagValue6"
+        },
+        {
+          "operation": "addOrReplace",
+					"field": "tags.tagName7",
+          "value": "tagValue7"
+        }
+      ]
+    }
+  }
+}
+}
