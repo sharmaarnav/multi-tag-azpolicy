@@ -1,0 +1,260 @@
+{
+    "mode": "Indexed",
+        "policyRule": {
+          "if": {
+            "allOf": [
+              {
+                "field": "[concat('tags[', parameters('tagName1'), ']')]",
+                "exists": "false"
+              },
+              {
+                "field": "[concat('tags[', parameters('tagName2'), ']')]",
+                "exists": "false"
+              },
+              {
+                "field": "[concat('tags[', parameters('tagName3'), ']')]",
+                "exists": "false"
+              },
+              {
+                "field": "[concat('tags[', parameters('tagName4'), ']')]",
+                "exists": "false"
+              },
+              {
+                "field": "[concat('tags[', parameters('tagName5'), ']')]",
+                "exists": "false"
+              },
+              {
+                "field": "[concat('tags[', parameters('tagName6'), ']')]",
+                "exists": "false"
+              },
+              {
+                "field": "[concat('tags[', parameters('tagName6'), ']')]",
+                "exists": "false"
+              },
+              {
+                "field": "[concat('tags[', parameters('tagName7'), ']')]",
+                "exists": "false"
+              },
+              {
+                "field": "[concat('tags[', parameters('tagName8'), ']')]",
+                "exists": "false"
+              },
+              {
+                "field": "[concat('tags[', parameters('tagName9'), ']')]",
+                "exists": "false"
+              },
+              {
+                "field": "[concat('tags[', parameters('tagName10'), ']')]",
+                "exists": "false"
+              }
+            ]
+          },
+          "then": {
+            "effect": "append",
+            "details": [
+              {
+                "field": "[concat('tags[', parameters('tagName1'), ']')]",
+                "value": "[parameters('tagValue1')]"
+              },
+              {
+                "field": "[concat('tags[', parameters('tagName2'), ']')]",
+                "value": "[parameters('tagValue2')]"
+              },
+              {
+                "field": "[concat('tags[', parameters('tagName3'), ']')]",
+                "value": "[parameters('tagValue3')]"
+              },
+              {
+                "field": "[concat('tags[', parameters('tagName4'), ']')]",
+                "value": "[parameters('tagValue4')]"
+              },
+              {
+                "field": "[concat('tags[', parameters('tagName5'), ']')]",
+                "value": "[parameters('tagValue5')]"
+              },
+              {
+                "field": "[concat('tags[', parameters('tagName6'), ']')]",
+                "value": "[parameters('tagValue6')]"
+              },
+              {
+                "field": "[concat('tags[', parameters('tagName7'), ']')]",
+                "value": "[parameters('tagValue7')]"
+              },
+              {
+                "field": "[concat('tags[', parameters('tagName8'), ']')]",
+                "value": "[parameters('tagValue8')]"
+              },
+              {
+                "field": "[concat('tags[', parameters('tagName9'), ']')]",
+                "value": "[parameters('tagValue9')]"
+              },
+              {
+                "field": "[concat('tags[', parameters('tagName10'), ']')]",
+                "value": "[parameters('tagValue10')]"
+              }
+            ]
+          }
+        },
+        "parameters": {
+          "tagName1": {
+            "type": "String",
+            "metadata": {
+              "displayName": "Tag Name1",
+              "description": "Name of the tag, such as 'environment'"
+            },
+            "defaultValue": "environment"
+          },
+          "tagValue1": {
+            "type": "String",
+            "metadata": {
+              "displayName": "Tag Name1 Value",
+              "description": "Value of the tag, such as 'production'"
+            },
+            "defaultValue": "production"
+          },
+          "tagName2": {
+            "type": "String",
+            "metadata": {
+              "displayName": "Tag Name2",
+              "description": "Name of the tag, such as 'service'"
+            },
+            "defaultValue": "service"
+          },
+          "tagValue2": {
+            "type": "String",
+            "metadata": {
+              "displayName": "TagName2 Value",
+              "description": "Value of the tag, such as 'webapps'"
+            },
+            "defaultValue": "webapps"
+          },
+          "tagName3": {
+            "type": "String",
+            "metadata": {
+              "displayName": "Tag Name3",
+              "description": "Name of the tag, such as 'project'"
+            },
+            "defaultValue": "project"
+          },
+          "tagValue3": {
+            "type": "String",
+            "metadata": {
+              "displayName": "Tag Name3 Value",
+              "description": "Value of the tag, such as 'POC'"
+            },
+            "defaultValue": "POC"
+          },
+          "tagName4": {
+            "type": "String",
+            "metadata": {
+              "displayName": "Tag Name2",
+              "description": "Name of the tag, such as 'service'"
+            },
+            "defaultValue": "service"
+          },
+          "tagValue4": {
+            "type": "String",
+            "metadata": {
+              "displayName": "TagName2 Value",
+              "description": "Value of the tag, such as 'webapps'"
+            },
+            "defaultValue": "webapps"
+          },
+          "tagName5": {
+            "type": "String",
+            "metadata": {
+              "displayName": "Tag Name2",
+              "description": "Name of the tag, such as 'service'"
+            },
+            "defaultValue": "service"
+          },
+          "tagValue5": {
+            "type": "String",
+            "metadata": {
+              "displayName": "TagName2 Value",
+              "description": "Value of the tag, such as 'webapps'"
+            },
+            "defaultValue": "webapps"
+          },
+          "tagName6": {
+            "type": "String",
+            "metadata": {
+              "displayName": "Tag Name2",
+              "description": "Name of the tag, such as 'service'"
+            },
+            "defaultValue": "service"
+          },
+          "tagValue6": {
+            "type": "String",
+            "metadata": {
+              "displayName": "TagName2 Value",
+              "description": "Value of the tag, such as 'webapps'"
+            },
+            "defaultValue": "webapps"
+          },
+          "tagName7": {
+            "type": "String",
+            "metadata": {
+              "displayName": "Tag Name2",
+              "description": "Name of the tag, such as 'service'"
+            },
+            "defaultValue": "service"
+          },
+          "tagValue7": {
+            "type": "String",
+            "metadata": {
+              "displayName": "TagName2 Value",
+              "description": "Value of the tag, such as 'webapps'"
+            },
+            "defaultValue": "webapps"
+          },
+          "tagName8": {
+            "type": "String",
+            "metadata": {
+              "displayName": "Tag Name2",
+              "description": "Name of the tag, such as 'service'"
+            },
+            "defaultValue": "service"
+          },
+          "tagValue8": {
+            "type": "String",
+            "metadata": {
+              "displayName": "TagName2 Value",
+              "description": "Value of the tag, such as 'webapps'"
+            },
+            "defaultValue": "webapps"
+          },
+          "tagName9": {
+            "type": "String",
+            "metadata": {
+              "displayName": "Tag Name2",
+              "description": "Name of the tag, such as 'service'"
+            },
+            "defaultValue": "service"
+          },
+          "tagValue9": {
+            "type": "String",
+            "metadata": {
+              "displayName": "TagName2 Value",
+              "description": "Value of the tag, such as 'webapps'"
+            },
+            "defaultValue": "webapps"
+          },
+          "tagName10": {
+            "type": "String",
+            "metadata": {
+              "displayName": "Tag Name2",
+              "description": "Name of the tag, such as 'service'"
+            },
+            "defaultValue": "service"
+          },
+          "tagValue10": {
+            "type": "String",
+            "metadata": {
+              "displayName": "TagName2 Value",
+              "description": "Value of the tag, such as 'webapps'"
+            },
+            "defaultValue": "webapps"
+          }
+        }
+  }
